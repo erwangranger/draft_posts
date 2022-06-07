@@ -4,26 +4,7 @@ In this blog post, I will be discussing some of the details of configuring Machi
 
 Please use the flowchart below to determine whether this topic is for you.
 
-```
-   ┌───────────────────────────────────────┐
-   │ Are you an Architect or Administrator │
-   │ who cares for or about OpenShift?     │
-   └───┬────────────────┬──────────────────┘
-       │                │
-       │No              │Yes
-       │                │
-    ┌──▼──────┐      ┌──▼─────────────┐
-    │ Stop    │      │ Is your budget │
-    │ reading │      │ unlimited?     │
-    └─────────┘      └──┬───────────┬─┘
-                        │           │
-                        │Yes        │No
-                        │           │
-                 ┌──────▼──┐     ┌──▼──────┐
-                 │ Stop    │     │ Keep    │
-                 │ reading │     │ reading │
-                 └─────────┘     └─────────┘
-```
+![](img/08.flowchart.png)
 
 If you've decided to keep reading, here are the sections in this blog post:
 
@@ -73,39 +54,7 @@ Because that is a pretty rare thing.
 The vast majority of computing needs tend to vary over time.
 Whether it's a surge of visits on your website, a TPS report that runs all night on the last Friday of each month, or you're gearing up for Back Friday, most computing workloads are made up of peaks and valleys.
 
-```
-Compute
-   ▲
-   │
-   │
-   │
-   │                             xxx
-   │                            xx xx
-   │                           x    x
-   │                          xx     x
-   │                          x      x
-   │                          x      x
-   │                         xx      x
-   │                         x       x
-   │                        xx       x                                  xxxxxx
-   │                        x        x          xxxx                  xx     xx
-   │           xxxx         x        x         xx   x                 x       xx
-   │          xx  xx       xx        x        xx     x               xx        x
-   │         xx    x       x         x       xx      x               x         x
-   │        xx     x       x         xx     xx       x               x         xx
-   │        x      x      x           x     x        x               x          x
-   │        x      x      x            xx xx         xx              x          x
-   │       xx       x     x             xxx           xx            x           x
-   │       x        x     x                             xxxxxxxxxxxx            xx
-   │       x        xx   xx                                                      xxx
-   │      x          xxxxx                                                         xxxxxxxx
-   │     xx
-   │xxxxx
-   │
-   └───────────────────────────────────────────────────────────────────────────────────────► Time
-
-                            Peaks and valleys. Artist rendition.
-```
+![](img/09.peaks.and.valleys.png)
 
 In face of this reality, we all tend to follow the same pattern:
 1. My environment needs to be powerful enough to still work at the peak of the demand!
