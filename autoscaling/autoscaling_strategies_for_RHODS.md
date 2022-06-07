@@ -52,7 +52,7 @@ And if so ... lucky you. Please e-mail me and tell me what your secret is.
 Because that is a pretty rare thing.
 
 The vast majority of computing needs tend to vary over time.
-Whether it's a surge of visits on your website, a TPS report that runs all night on the last Friday of each month, or you're gearing up for Back Friday, most computing workloads are made up of peaks and valleys.
+Whether it's a surge of visits on your website, a TPS report that runs all night on the last Friday of each month, or you're gearing up for Black Friday, most computing workloads are made up of peaks and valleys.
 
 ![](img/09.peaks.and.valleys.png)
 
