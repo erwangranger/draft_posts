@@ -65,22 +65,8 @@ In face of this reality, we all tend to follow the same pattern:
 
 ### AutoScaling in Kubernetes-land: Nodes and/or Pods
 
-```
- ┌──────────────────┐     ┌──────────────────┐
- │ ┌────┐   ┌────┐  │     │ ┌────┐   ┌────┐  │
- │ │    │   │    │  │     │ │    │   │    │  │
- │ │    │   │    │  │     │ │    │   │    │  │
- │ └────┘   └────┘  │     │ │    │   └────┘  │
- │  Pod      Pod    │     │ │    │    Pod    │
- │ ┌──────────────┐ │     │ │    │           │
- │ │              │ │     │ │    │           │    ┌──────────────────┐
- │ │              │ │     │ │    │           │    │ ┌────┐           │
- │ │              │ │     │ │    │           │    │ │    │           │
- │ └──────────────┘ │     │ └────┘           │    │ └────┘           │
- │  Pod             │     │  Pod             │    │  Pod             │
- └──────────────────┘     └──────────────────┘    └──────────────────┘
-  Node 1                   Node 2                  Node 3
-```
+![](img/10.nodes.and.pods.png)
+
 
 If you've spent any time working in Kubernetes Environments, you will know that [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) need to land on [Nodes](https://kubernetes.io/docs/concepts/architecture/nodes/).
 
